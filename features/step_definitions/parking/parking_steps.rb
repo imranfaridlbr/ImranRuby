@@ -11,7 +11,7 @@ And(/^I have entered PCN and VRN numbers for the Informal Representation$/) do
 end
 
 And(/^I have entered PCN and VRN numbers for the Formal Representation$/) do
-  @parking_page.pcn.set "AF72000085"
+  @parking_page.pcn.set "AF72000154"
   @parking_page.vrn.set "EG51DZT"
   @parking_page.submit_button.click
 end

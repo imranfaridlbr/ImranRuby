@@ -16,7 +16,7 @@ class ParkingPage < SitePrism::Page
   element :pcn_details, :xpath, "//a[text() = 'Make a challenge to the council']"
   element :pcn_challenge, :xpath, "//a[text() = 'Make a representation to the council']"
 
-  element :challenge_penalty_charge_btn, :xpath, ".//*[@id='one']/div/div[2]/div/div/div[2]/div/a"
+  element :challenge_penalty_charge_btn, :xpath, ".//*[@id='three']/p[7]/a"
   element :terms_and_cond_checkbox, "label[for='confirm-challenge'] input[type='checkbox']"
   element :challenge_reason_radiobox, "input[currentindex='0']"
   element :challenge_area_next_btn, ".btn.btn-primary.float_right.goto-rep-reason"

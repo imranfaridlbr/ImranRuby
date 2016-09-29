@@ -75,7 +75,7 @@ Capybara.register_driver :poltergeist do |app|
     Capybara::Poltergeist::Driver.new(app, :js_errors => false)
 end
 
-Capybara.default_wait_time = 30
+Capybara.default_max_wait_time=30
 
 case ENV['BROWSER']
     when 'poltergeist'

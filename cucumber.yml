@@ -1,0 +1,7 @@
+<%
+rerun = File.file?('rerun.txt') ? IO.read('rerun.txt') : ""
+std_opts = "--format pretty --strict --tags ~@wip --tags ~@bug"
+%>
+default: <%= std_opts %> --format html --out report.html features
+test: <%= std_opts %> -f rerun -o rerun.txt ENV_CONFIG=test --format html --out cucumber_report/cucumber.html features
+rerun_test:  <%= std_opts %> @rerun.txt ENV_CONFIG=test --format html --out cucumber_report/rerun-cucumber.html

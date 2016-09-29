@@ -1,0 +1,7 @@
+# ignore idea files
+*.png
+.idea/
+.local_run
+reports/
+*.html
+junit/

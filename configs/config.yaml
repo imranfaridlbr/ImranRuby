@@ -1,0 +1,8 @@
+defaults: &execution_defaults
+  default_config: test
+  default_wait_time: 20
+
+test:
+  <<: *execution_defaults
+  redbridge_url: 'https://v3test.redbridge.gov.uk/'
+  northgate_url: 'http://lbrcworacbb02:8888/iworld/rbtest3_v6.html'

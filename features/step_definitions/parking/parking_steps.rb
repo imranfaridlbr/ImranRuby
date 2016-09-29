@@ -89,7 +89,7 @@ end
 And(/^I attach proof of permission from the owner$/) do
   wait_for_an_element_to_appear
   sleep 3
-  attach_file(@parking_page.proof_of_permission, "assets/reason.jpg")
+  attach_file(@parking_page.proof_of_permission, "/assets/reason.jpg")
   sleep 2
   @parking_page.challenge_area_next_btn.click
 end

@@ -13,7 +13,7 @@ class ParkingPage < SitePrism::Page
   element :pcn, "input[name='Pcn']"
   element :vrn, "input[name='Vrn']"
   element :submit_button, ".btn.btn-primary.submit-pcn-search"
-  element :pcn_details, :xpath, ".//*[@id='one']/div/div[2]/div/div/div[2]/div/a"
+  element :pcn_details, :xpath, "html/body/div[2]/div/section[2]/div[2]/div/div/div[1]/div/div[2]/div/div/div[2]/div/a"
   element :pcn_challenge, :xpath, "//a[text() = 'Make a representation to the council']"
 
   element :challenge_penalty_charge_btn, :xpath, ".//*[@id='three']/p[7]/a"
